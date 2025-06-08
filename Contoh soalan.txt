@@ -1,0 +1,40 @@
+20 Soalan untuk Try dalam Chatbot
+1️⃣ Bagaimana saya boleh memastikan semakan capaian pengguna, had kuasa memperaku, dan tugas kewangan di PTJ adalah selaras dengan peraturan AP11?
+
+2️⃣ Apakah maksud AP11 dan mengapa ia penting untuk dipatuhi dalam urusan kewangan?
+
+3️⃣ Bilakah baucar kewangan dalam sistem eP atau iGFMAS perlu dicetak?
+
+4️⃣ Apakah perihal bayaran yang perlu dilengkapkan sebelum tuntutan bayaran boleh diproses?
+
+5️⃣ Apakah yang dimaksudkan dengan CAA dan bagaimana saya boleh menggunakannya dengan betul dalam sistem iGFMAS?
+
+6️⃣ Bagaimana cara untuk memastikan nombor akaun bank, nama pembekal, atau penerima adalah tepat dengan dokumen sokongan yang disertakan?
+
+7️⃣ Adakah saya boleh menggunakan salinan bil atau invois sebagai dokumen sokongan jika bil asal telah hilang?
+
+8️⃣ Bagaimana untuk memastikan amaun dalam arahan pembayaran adalah sama dengan invois atau dokumen tuntutan?
+
+9️⃣ Apakah langkah-langkah pengesahan yang perlu dilakukan jika menggunakan salinan dokumen sokongan untuk pembayaran?
+
+🔟 Bolehkah dokumen utama seperti invois atau bil dibuat pindaan setelah ia diterima?
+
+1️⃣1️⃣ Bagaimanakah cara untuk menentukan tarikh akhir pembayaran mengikut peraturan 14 hari dalam AP103(a)?
+
+1️⃣2️⃣ Siapakah yang bertanggungjawab untuk menandakan kotak AP58(a) atau AP96 dalam sistem iGFMAS?
+
+1️⃣3️⃣ Apakah dokumen yang perlu dicap atau ditanda sebagai 'TELAH BAYAR' selepas pembayaran dibuat?
+
+1️⃣4️⃣ Dalam proses pembayaran, bilakah saya perlu menggunakan modul eP dan bilakah saya perlu menggunakan iGFMAS?
+
+1️⃣5️⃣ Apakah yang dimaksudkan dengan pengasingan tugas dalam proses kewangan, dan mengapa ia penting?
+
+1️⃣6️⃣ Bagaimana saya boleh memastikan penerima bayaran adalah sah dan betul?
+
+1️⃣7️⃣ Apakah langkah pencegahan untuk mengelakkan pembayaran berganda (double payment)?
+
+1️⃣8️⃣ Jika terdapat pelarasan bayaran, apakah prosedur yang perlu saya ikuti?
+
+1️⃣9️⃣ Bolehkah bayaran dibuat tanpa cap 'TARIKH TERIMA' pada dokumen?
+
+2️⃣0️⃣ Bagaimana saya boleh memastikan dokumen sokongan yang diperlukan untuk bayaran adalah lengkap sebelum dihantar?

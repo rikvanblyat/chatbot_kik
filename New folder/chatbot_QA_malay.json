@@ -1,0 +1,82 @@
+[
+    {
+        "Soalan":"Bagaimana saya boleh memastikan semakan capaian pengguna, had kuasa memperaku, dan tugas kewangan di PTJ adalah selaras dengan peraturan AP11?",
+        "Jawapan":"Semak fail Arahan Pembayaran di Pusat Tanggungjawab (PTJ)  dan pastikan semua dokumen kewangan seperti di para 2.19 Lampiran A SPANM Bil.7 Tahun 2018 dilampirkan bersama."
+    },
+    {
+        "Soalan":"Apakah maksud AP11 dan mengapa ia penting untuk dipatuhi dalam urusan kewangan?",
+        "Jawapan":"Bandingkan perihal di Arahan Pembayaran dengan dokumen sokongan yang dilampirkan"
+    },
+    {
+        "Soalan":"Bilakah baucar kewangan dalam sistem eP atau iGFMAS perlu dicetak?",
+        "Jawapan":"Bandingkan CAA di Arahan Pembayaran dengan dokumen sokongan yang dilampirkan\n\nPastikan perbelanjaan Aset Tidak Dipermodalkan dan Aset Bernilai Rendah yang bernilai kurang daripada RM2,000.00 setiap unit dilaporkan sebagai perbelanjaan biasa di bawah Kelas Akaun B0300000 Aset Tidak Dipermodalkan.\n\nSemak sijil pengesahan baki untuk memastikan pelarasan atau pembetulan telah dibuat.\nPenentuan Kod Akaun Bagi Kod Akaun Hartanah, Loji dan Peralatan, Inventori Dan Belanja. Sekiranya terdapat ketidakpatuhan bagi kod CAA perolehan aset, sila masukkan dalam RCM Aset\n"
+    },
+    {
+        "Soalan":"Apakah perihal bayaran yang perlu dilengkapkan sebelum tuntutan bayaran boleh diproses?",
+        "Jawapan":"Bandingkan maklumat di Arahan Pembayaran dengan dokumen sokongan yang dilampirkan dan eVendor"
+    },
+    {
+        "Soalan":"Apakah yang dimaksudkan dengan CAA dan bagaimana saya boleh menggunakannya dengan betul dalam sistem iGFMAS?",
+        "Jawapan":"Semak dokumen yang disertakan           \nPanjar Unit\nSemak samaada dokumen permohonan panjar di Kew 304 lengkap dan mematuhi peraturan. Dokumen terlibat BAT E 28B, Surat Iringan Unit Tumpangan, Surat Pengesahan Peruntukan (SPP), Senarai Nama Anggota Untuk Pembayaran, Justifikasi Tuntutan > 3 bulan (Jika Ada), Penyata Kawalan SPP Excel, Elaun Askar Wataniah, Kelulusan Pra Audit dan Penyata Prestasi"
+    },
+    {
+        "Soalan":"Bagaimana cara untuk memastikan nombor akaun bank, nama pembekal, atau penerima adalah tepat dengan dokumen sokongan yang disertakan?",
+        "Jawapan":"Semak dokumen yang disertakan "
+    },
+    {
+        "Soalan":"Adakah saya boleh menggunakan salinan bil atau invois sebagai dokumen sokongan jika bil asal telah hilang?",
+        "Jawapan":"Semak dokumen yang disertakan dan bandingkan amaun di invois atau dokumen tuntutan dengan Arahan Pembayaran "
+    },
+    {
+        "Soalan":"Bagaimana untuk memastikan amaun dalam arahan pembayaran adalah sama dengan invois atau dokumen tuntutan?",
+        "Jawapan":"Semak dokumen yang disertakan dan buat pengiraan semula termasuk caj CDC (sekiranya ada) atau denda lewat\/ penalti.\nPastikan perkhidmatan atau bekalan telah diterima dengan sempurna termasuk pembayaran akaun pukal (genuine).\nSila rujuk RCM ABT  untuk semakan lanjut."
+    },
+    {
+        "Soalan":"Apakah langkah-langkah pengesahan yang perlu dilakukan jika menggunakan salinan dokumen sokongan untuk pembayaran?",
+        "Jawapan":"Semak dokumen yang disertakan "
+    },
+    {
+        "Soalan":"Bolehkah dokumen utama seperti invois atau bil dibuat pindaan setelah ia diterima?",
+        "Jawapan":"Semak dokumen yang disertakan\n"
+    },
+    {
+        "Soalan":"Bagaimanakah cara untuk menentukan tarikh akhir pembayaran mengikut peraturan 14 hari dalam AP103(a)?",
+        "Jawapan":"Semak tarikh cap terima di Invois\/ bil\/penyata dan semak silang dengan Laporan Prestasi Proses Pembayaran  Bil \/Sempurna serta Laporan Bil\/Invois (AP103) (Rujukan Sistem iGFMAS - Pengurusan Arahan : Laporan )\n"
+    },
+    {
+        "Soalan":"Siapakah yang bertanggungjawab untuk menandakan kotak AP58(a) atau AP96 dalam sistem iGFMAS?",
+        "Jawapan":"Semak butiran perakuan di pesanan kerajaan\/ invois\/ bil\/ tuntutan\n\nPegawai yang dibenarkan adalah ditentukan secara kawalan dalaman oleh Pengawal Pengawal\/Ketua Jabatan secara bertulis.\n\nSemak Pesanan Kerajaan \/ invois. Sekiranya melalui ePerolehan perakuan adalah secara atas talian bagi Pesanan Kerajaan. Manakala pengesahan\/perakuan invois  bagi bekalan\/perkhidmatan atau kerja telah dibekalkan\/disempurnakan hendaklah disahkan oleh pegawai yang dibenarkan bagi dokumen eP di bawah AP99(e) \n\nManakala sekiranya pesanan kerajaan \/inden kerajaan melalui iGFMAS perakuan adalah secara manual di atas hardcopy diperlukan bagi pesanan kerajaan \/inden kerajaan dan invois"
+    },
+    {
+        "Soalan":"Apakah dokumen yang perlu dicap atau ditanda sebagai 'TELAH BAYAR' selepas pembayaran dibuat?",
+        "Jawapan":"Semak borang AP58 (a) dan kelulusan Pejabat Perakaunan\/Kementerian Kewangan\n\nSemak Arahan Pembayaran dan pastikan kotak AP58(a) dalam iGFMAS ditanda.\n\nSila rujuk RCM Liabiliti di bawah skop A Akaun Belum Bayar untuk semakan lanjut."
+    },
+    {
+        "Soalan":"Dalam proses pembayaran, bilakah saya perlu menggunakan modul eP dan bilakah saya perlu menggunakan iGFMAS?",
+        "Jawapan":"Semak dokumen yang disertakan"
+    },
+    {
+        "Soalan":"Apakah yang dimaksudkan dengan pengasingan tugas dalam proses kewangan, dan mengapa ia penting?",
+        "Jawapan":"Semak dan pastikan Borang Pergerakan Dokumen lengkap dan tepat serta dilampirkan bersama Arahan Pembayaran.\n"
+    },
+    {
+        "Soalan":"Bagaimana saya boleh memastikan penerima bayaran adalah sah dan betul?",
+        "Jawapan":"Semak perihal Arahan Pembayaran dan dokumen sokongan dengan modul yang digunakan "
+    },
+    {
+        "Soalan":"Apakah langkah pencegahan untuk mengelakkan pembayaran berganda (double payment)?",
+        "Jawapan":"Semak pegawai yang memperaku II Arahan Pembayaran dengan penerima bayaran.\nMemastikan pegawai yang menuntut bukan Pegawai  yang memperaku arahan pembayaran (Peraku II)\n\nMemastikan pegawai yang menyedia, menyemak dan mengesah Borang Perubahan Gaji hendaklah berbeza kelulusan khas hendaklah diperolehi daripada Pejabat Perakaunan sekiranya tiada perjawatan tertakluk kepada AP11"
+    },
+    {
+        "Soalan":"Jika terdapat pelarasan bayaran, apakah prosedur yang perlu saya ikuti?",
+        "Jawapan":"Semak nama penerima pada Arahan Pembayaran dengan dokumen tuntutan adalah sama.\nSila rujuk RCM ABT untuk semakan lanjut.\n\nPastikan tindakan pembetulan\/pelarasan\/kutipan semula dilaksanakan."
+    },
+    {
+        "Soalan":"Bolehkah bayaran dibuat tanpa cap 'TARIKH TERIMA' pada dokumen?",
+        "Jawapan":"Semak senarai sample yang dipilih oleh ACL dan memastikan transaksi yang sama dan penerima bayaran yang sama untuk transaksi yang sama.\n\nPastikan tindakan pembetulan\/pelarasan\/kutipan semula dilaksanakan.\nSila rujuk RCM ABT untuk semakan lanjut."
+    },
+    {
+        "Soalan":"Bagaimana saya boleh memastikan dokumen sokongan yang diperlukan untuk bayaran adalah lengkap sebelum dihantar?",
+        "Jawapan":"Semak pelarasan jurnal bagi doc type \"S\". Pastikan amaun, debit\/kredit, PTJ membayar \/ PTJ dipertanggung dan kod akaun adalah tepat."
+    }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "id":1,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bagaimana saya boleh memastikan semakan capaian pengguna, had kuasa memperaku, dan tugas kewangan di PTJ adalah selaras dengan peraturan AP11?"
+    },
+    {
+        "id":2,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Apakah maksud AP11 dan mengapa ia penting untuk dipatuhi dalam urusan kewangan?"
+    },
+    {
+        "id":3,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bilakah baucar kewangan dalam sistem eP atau iGFMAS perlu dicetak?"
+    },
+    {
+        "id":4,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Apakah perihal bayaran yang perlu dilengkapkan sebelum tuntutan bayaran boleh diproses?"
+    },
+    {
+        "id":5,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Apakah yang dimaksudkan dengan CAA dan bagaimana saya boleh menggunakannya dengan betul dalam sistem iGFMAS?"
+    },
+    {
+        "id":6,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bagaimana cara untuk memastikan nombor akaun bank, nama pembekal, atau penerima adalah tepat dengan dokumen sokongan yang disertakan?"
+    },
+    {
+        "id":7,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Adakah saya boleh menggunakan salinan bil atau invois sebagai dokumen sokongan jika bil asal telah hilang?"
+    },
+    {
+        "id":8,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bagaimana untuk memastikan amaun dalam arahan pembayaran adalah sama dengan invois atau dokumen tuntutan?"
+    },
+    {
+        "id":9,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Apakah langkah-langkah pengesahan yang perlu dilakukan jika menggunakan salinan dokumen sokongan untuk pembayaran?"
+    },
+    {
+        "id":10,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bolehkah dokumen utama seperti invois atau bil dibuat pindaan setelah ia diterima?"
+    },
+    {
+        "id":11,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bagaimanakah cara untuk menentukan tarikh akhir pembayaran mengikut peraturan 14 hari dalam AP103(a)?"
+    },
+    {
+        "id":12,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Siapakah yang bertanggungjawab untuk menandakan kotak AP58(a) atau AP96 dalam sistem iGFMAS?"
+    },
+    {
+        "id":13,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Apakah dokumen yang perlu dicap atau ditanda sebagai 'TELAH BAYAR' selepas pembayaran dibuat?"
+    },
+    {
+        "id":14,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Dalam proses pembayaran, bilakah saya perlu menggunakan modul eP dan bilakah saya perlu menggunakan iGFMAS?"
+    },
+    {
+        "id":15,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Apakah yang dimaksudkan dengan pengasingan tugas dalam proses kewangan, dan mengapa ia penting?"
+    },
+    {
+        "id":16,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bagaimana saya boleh memastikan penerima bayaran adalah sah dan betul?"
+    },
+    {
+        "id":17,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Apakah langkah pencegahan untuk mengelakkan pembayaran berganda (double payment)?"
+    },
+    {
+        "id":18,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Jika terdapat pelarasan bayaran, apakah prosedur yang perlu saya ikuti?"
+    },
+    {
+        "id":19,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bolehkah bayaran dibuat tanpa cap 'TARIKH TERIMA' pada dokumen?"
+    },
+    {
+        "id":20,
+        "kategori":"Kakitangan Awam",
+        "soalan":"Bagaimana saya boleh memastikan dokumen sokongan yang diperlukan untuk bayaran adalah lengkap sebelum dihantar?"
+    },
+    {
+        "id":21,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Saya telah menghantar invois minggu lepas, bilakah saya boleh menerima bayaran?"
+    },
+    {
+        "id":22,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Jika terdapat kesilapan ejaan pada invois, adakah bayaran masih boleh diproses?"
+    },
+    {
+        "id":23,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Bagaimana cara untuk saya menyemak status bayaran saya? Adakah sudah diproses atau belum?"
+    },
+    {
+        "id":24,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Apakah dokumen sokongan yang perlu disediakan untuk membuat tuntutan bayaran kepada kerajaan?"
+    },
+    {
+        "id":25,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Jika nombor akaun bank saya salah dalam dokumen, bagaimana cara untuk membetulkannya?"
+    },
+    {
+        "id":26,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Bolehkah saya menggunakan salinan bil untuk tuntutan bayaran, atau perlu bil asal sahaja?"
+    },
+    {
+        "id":27,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Jika bayaran saya tertangguh melebihi 14 hari, kepada siapa saya boleh membuat aduan?"
+    },
+    {
+        "id":28,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Bagaimanakah cara untuk memastikan invois saya telah diterima oleh jabatan berkaitan?"
+    },
+    {
+        "id":29,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Saya telah membuat tuntutan sebelum ini, tetapi bayaran masih belum diterima. Apakah langkah seterusnya yang perlu saya ambil?"
+    },
+    {
+        "id":30,
+        "kategori":"Orang Awam \/ Vendor",
+        "soalan":"Jika terdapat cap 'TELAH BAYAR' pada invois, adakah itu bermakna bayaran telah selesai dibuat?"
+    }
+]

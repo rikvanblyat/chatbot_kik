@@ -1,0 +1,8 @@
+1. Buat pilihan selepas "keyword" hover 4~5 pilihan keyword;
+2. perhalusi lg carian--keyword jgn campur;--database baharu
+3. User tekan enter untuk search jawapan;
+4. interaktif chat--bubble, emoticon, hover icon etc.;
+5. Khusus utk PTJ, x perlu org biasa;
+6. carian sampai hujung ayat (pekeliling) muka surat, clausa, bilangan etc.;
+7. Perubahan buku kik yg sebelum ni dgn yg sekarang. (New Horizon KIK);
+8. 
