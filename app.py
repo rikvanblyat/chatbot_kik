@@ -1,4 +1,4 @@
-# ===== Chatbot (Full Document Search with Intent Detection) =====
+# ===== Chatbot (Flexible Start Page per File) =====
 
 import streamlit as st 
 import os
@@ -94,6 +94,13 @@ body {
 with open("file_mapping.json", "r", encoding="utf-8") as f:
     file_mapping = json.load(f)
 
+# ===== Optional Metadata with start page =====
+if os.path.exists("file_metadata.json"):
+    with open("file_metadata.json", "r", encoding="utf-8") as f:
+        file_metadata = json.load(f)
+else:
+    file_metadata = {}
+
 # ===== Header Box =====
 st.markdown('<div class="header">Chatbot FAQ & Carian Dokumen (InnoSpark)</div>', unsafe_allow_html=True)
 
@@ -124,14 +131,16 @@ def detect_intent(question):
 def search_pdf(keyword, file_path):
     reader = PdfReader(file_path)
     results = []
-    for i, page in enumerate(reader.pages):
+    filename = os.path.basename(file_path)
+    start_page = file_metadata.get(filename, {}).get("start_page", 0)
+    for i, page in enumerate(reader.pages[start_page:], start=start_page + 1):
         text = page.extract_text()
         if text and re.search(re.escape(keyword), text, re.IGNORECASE):
             snippet = text.strip().replace("\n", " ")
             results.append({
                 "Isi": f"{snippet}",
-                "Dokumen": file_mapping.get(os.path.basename(file_path), "Pekeliling Rasmi Berkaitan"),
-                "Page": i + 1
+                "Dokumen": file_mapping.get(filename, "Pekeliling Rasmi Berkaitan"),
+                "Page": i
             })
     return results
 
