@@ -130,7 +130,6 @@ def search_pdf(keyword, file_path):
             snippet = text.strip().replace("\n", " ")
             results.append({
                 "Isi": f"{snippet}",
-                "Contoh": f"Sebagai contoh, {snippet[:80]}...",
                 "Dokumen": file_mapping.get(os.path.basename(file_path), "Pekeliling Rasmi Berkaitan"),
                 "Page": i + 1
             })
@@ -144,7 +143,6 @@ def search_docx(keyword, file_path):
             text = para.text.strip()
             results.append({
                 "Isi": f"{text}",
-                "Contoh": f"Sebagai contoh, {text[:80]}...",
                 "Dokumen": file_mapping.get(os.path.basename(file_path), "Pekeliling Rasmi Berkaitan")
             })
     return results
@@ -159,7 +157,6 @@ def search_xlsx(keyword, file_path):
             if keyword.lower() in row_text.lower():
                 results.append({
                     "Isi": f"{row_text}",
-                    "Contoh": f"Sebagai contoh, {row_text[:80]}...",
                     "Dokumen": file_mapping.get(os.path.basename(file_path), "Pekeliling Rasmi Berkaitan")
                 })
     return results
@@ -186,7 +183,6 @@ if st.button("Cari"):
                     st.markdown(f"""
                     <div class="custom-answer">
                     {res['Isi']}<br><br>
-                    {res['Contoh']}<br><br>
                     Maklumat ini boleh dirujuk dalam <b>{res['Dokumen']}</b>{' (Muka surat ' + str(res['Page']) + ')' if 'Page' in res else ''}.
                     </div>
                     """, unsafe_allow_html=True)
@@ -200,4 +196,3 @@ if st.button("Cari"):
         st.warning("Sila taip soalan atau kata kunci anda dahulu.")
 
 st.markdown('<div class="footer">© 2025 Chatbot KIK - InnoSpark (JANM Pulau Pinang)</div>', unsafe_allow_html=True)
-
