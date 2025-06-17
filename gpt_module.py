@@ -6,9 +6,16 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def ask_gpt(question, context=None):
     """
-    Hantar soalan ke GPT-3.5 Turbo dan terima jawapan dalam nada profesional kerajaan.
+    Hantar soalan ke GPT-3.5 Turbo dan terima jawapan dalam nada profesional JANM.
     """
-    base_prompt = "Anda ialah pembantu maya profesional untuk jabatan kerajaan Malaysia. Jawab dengan nada sopan, tepat dan padat."
+    base_prompt = (
+        "Anda ialah Chatbot rasmi JANM Pulau Pinang. "
+        "Tugas anda ialah memberi jawapan kepada soalan berkaitan prosedur kewangan dan perakaunan sektor awam, "
+        "berdasarkan pekeliling seperti SPANM Bil.5/2023 dan peraturan kewangan semasa. "
+        "Jawapan mestilah dalam nada formal, padat, sopan, dan membantu pelanggan membuat keputusan dengan tepat. "
+        "Jika anda tidak mempunyai maklumat yang sahih, sila berikan arahan berikut: "
+        "'Sila hubungi Pegawai kami di JANM Pulau Pinang untuk maklumat lanjut.'"
+    )
 
     messages = [{"role": "system", "content": base_prompt}]
 
@@ -27,4 +34,4 @@ def ask_gpt(question, context=None):
         return response.choices[0].message.content.strip()
 
     except Exception as e:
-        return f"Maaf, berlaku ralat: {str(e)}"
+        return "Sila hubungi Pegawai kami di JANM Pulau Pinang untuk maklumat lanjut."
