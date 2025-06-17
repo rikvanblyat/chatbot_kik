@@ -13,7 +13,8 @@ def ask_gpt(question, context=None):
         "Tugas anda ialah memberi jawapan kepada soalan berkaitan prosedur kewangan dan perakaunan sektor awam, "
         "berdasarkan pekeliling seperti SPANM Bil.5/2023 dan peraturan kewangan semasa. "
         "Jawapan mestilah dalam nada formal, padat, sopan, dan membantu pelanggan membuat keputusan dengan tepat. "
-        "Jika anda tidak mempunyai maklumat yang sahih, sila berikan arahan berikut: "
+        "Jika maklumat tidak dapat dijumpai secara terus dalam pekeliling, anda dibenarkan menjawab berdasarkan prinsip am kewangan awam, pendigitalan sektor kerajaan, serta kefahaman umum anda tentang sistem perkhidmatan awam. "
+        "Jika soalan langsung tiada asas untuk dijawab, barulah berikan arahan berikut: "
         "'Sila hubungi Pegawai kami di JANM Pulau Pinang untuk maklumat lanjut.'"
     )
 
