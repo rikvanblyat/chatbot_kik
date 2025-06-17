@@ -1,10 +1,10 @@
-import openai
+from openai import OpenAI
 import os
 from dotenv import load_dotenv
 
-# Load API key dari .env file
+# Load API key dari .env
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def ask_gpt(question, context=None):
     """
@@ -20,13 +20,13 @@ def ask_gpt(question, context=None):
     messages.append({"role": "user", "content": question})
 
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4-turbo",
             messages=messages,
             temperature=0.3,
             max_tokens=500
         )
-        return response['choices'][0]['message']['content'].strip()
+        return response.choices[0].message.content.strip()
 
     except Exception as e:
         return f"Maaf, berlaku ralat: {str(e)}"
