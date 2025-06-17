@@ -121,12 +121,16 @@ def extract_klausa(text):
         return general_match.group(1)
     return "-"
 
+def fuzzy_match(needle, haystack):
+    words = needle.lower().split()
+    return all(word in haystack.lower() for word in words)
+
 def search_pdf(keyword, file_path):
     reader = PdfReader(file_path)
     results = []
     for page_num, page in enumerate(reader.pages, start=1):
         text = page.extract_text()
-        if text and re.search(re.escape(keyword), text, re.IGNORECASE):
+        if text and fuzzy_match(keyword, text):
             snippet = text.strip().replace("\n", " ")
             filename = os.path.basename(file_path)
             dokumen_name = file_mapping.get(filename, filename)
@@ -145,7 +149,7 @@ def search_docx(keyword, file_path):
     doc = docx.Document(file_path)
     results = []
     for para in doc.paragraphs:
-        if keyword.lower() in para.text.lower():
+        if fuzzy_match(keyword, para.text):
             text = para.text.strip()
             filename = os.path.basename(file_path)
             dokumen = file_mapping.get(filename, filename)
@@ -163,7 +167,7 @@ def search_xlsx(keyword, file_path):
         df = excel.parse(sheet)
         for row in df.itertuples():
             row_text = " ".join([str(cell) for cell in row[1:] if pd.notnull(cell)])
-            if keyword.lower() in row_text.lower():
+            if fuzzy_match(keyword, row_text):
                 filename = os.path.basename(file_path)
                 dokumen = file_mapping.get(filename, filename)
                 results.append({
