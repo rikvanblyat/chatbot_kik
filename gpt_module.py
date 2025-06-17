@@ -1,9 +1,7 @@
 from openai import OpenAI
 import os
-from dotenv import load_dotenv
 
-# Load API key dari .env
-load_dotenv()
+# Terus baca API key dari environment (Streamlit Secrets)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def ask_gpt(question, context=None):
