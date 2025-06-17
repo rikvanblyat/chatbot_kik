@@ -112,14 +112,19 @@ def search_faq(question, faq_data):
             }]
     return []
 
-def extract_klausa(text):
-    klausa_match = re.search(r"Klausa\s*(\d+\.\d+)", text, re.IGNORECASE)
-    if klausa_match:
-        return klausa_match.group(1)
-    general_match = re.search(r"(\d+\.\d+)", text)
-    if general_match:
-        return general_match.group(1)
-    return "-"
+def extract_rujukan(text, page_num):
+    klausa = re.search(r"Klausa\s*(\d+\.\d+)", text)
+    para = re.search(r"(Perenggan|Para)\s*(\d+\.\d+)", text)
+    general = re.search(r"(\d+\.\d+)", text)
+
+    if klausa:
+        return f"SPANM Bil.5/2023, Klausa {klausa.group(1)}, Muka Surat {page_num}"
+    elif para:
+        return f"SPANM Bil.5/2023, Para {para.group(2)}, Muka Surat {page_num}"
+    elif general:
+        return f"SPANM Bil.5/2023, Para {general.group(1)}, Muka Surat {page_num}"
+    else:
+        return f"SPANM Bil.5/2023, Muka Surat {page_num}"
 
 def fuzzy_match(needle, haystack):
     words = needle.lower().split()
@@ -134,10 +139,7 @@ def search_pdf(keyword, file_path):
             snippet = text.strip().replace("\n", " ")
             filename = os.path.basename(file_path)
             dokumen_name = file_mapping.get(filename, filename)
-
-            klausa = extract_klausa(text)
-            rujukan = f"SPANM Bil.5/2023, Klausa {klausa}, Muka Surat {page_num}" if klausa != "-" else f"SPANM Bil.5/2023, Muka Surat {page_num}"
-
+            rujukan = extract_rujukan(text, page_num)
             results.append({
                 "Isi": f"{snippet}",
                 "Contoh": f"Sebagai contoh, {snippet[:80]}...",
