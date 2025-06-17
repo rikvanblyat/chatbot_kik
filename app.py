@@ -112,6 +112,15 @@ def search_faq(question, faq_data):
             }]
     return []
 
+def extract_klausa(text):
+    klausa_match = re.search(r"Klausa\s*(\d+\.\d+)", text, re.IGNORECASE)
+    if klausa_match:
+        return klausa_match.group(1)
+    general_match = re.search(r"(\d+\.\d+)", text)
+    if general_match:
+        return general_match.group(1)
+    return "-"
+
 def search_pdf(keyword, file_path):
     reader = PdfReader(file_path)
     results = []
@@ -122,11 +131,8 @@ def search_pdf(keyword, file_path):
             filename = os.path.basename(file_path)
             dokumen_name = file_mapping.get(filename, filename)
 
-            # Cari klausa (contoh: 6.3, 4.1)
-            klausa_match = re.search(r"(\d+\.\d+)", text)
-            klausa = klausa_match.group(1) if klausa_match else "-"
-
-            rujukan = f"{dokumen_name}, Klausa {klausa}, Muka Surat {page_num}" if klausa != "-" else f"{dokumen_name}, Muka Surat {page_num}"
+            klausa = extract_klausa(text)
+            rujukan = f"SPANM Bil.5/2023, Klausa {klausa}, Muka Surat {page_num}" if klausa != "-" else f"SPANM Bil.5/2023, Muka Surat {page_num}"
 
             results.append({
                 "Isi": f"{snippet}",
