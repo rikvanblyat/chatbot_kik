@@ -119,10 +119,12 @@ def search_pdf(keyword, file_path):
         text = page.extract_text()
         if text and re.search(re.escape(keyword), text, re.IGNORECASE):
             snippet = text.strip().replace("\n", " ")
+            filename = os.path.basename(file_path)
+            dokumen = file_mapping.get(filename, filename)
             results.append({
                 "Isi": f"{snippet}",
                 "Contoh": f"Sebagai contoh, {snippet[:80]}...",
-                "Dokumen": f"{file_mapping.get(os.path.basename(file_path), os.path.basename(file_path))} (Mukasurat {page_num})"
+                "Dokumen": f"{dokumen}, Muka Surat {page_num}"
             })
     return results
 
@@ -132,10 +134,12 @@ def search_docx(keyword, file_path):
     for para in doc.paragraphs:
         if keyword.lower() in para.text.lower():
             text = para.text.strip()
+            filename = os.path.basename(file_path)
+            dokumen = file_mapping.get(filename, filename)
             results.append({
                 "Isi": f"{text}",
                 "Contoh": f"Sebagai contoh, {text[:80]}...",
-                "Dokumen": file_mapping.get(os.path.basename(file_path), os.path.basename(file_path))
+                "Dokumen": dokumen
             })
     return results
 
@@ -147,10 +151,12 @@ def search_xlsx(keyword, file_path):
         for row in df.itertuples():
             row_text = " ".join([str(cell) for cell in row[1:] if pd.notnull(cell)])
             if keyword.lower() in row_text.lower():
+                filename = os.path.basename(file_path)
+                dokumen = file_mapping.get(filename, filename)
                 results.append({
                     "Isi": f"{row_text}",
                     "Contoh": f"Sebagai contoh, {row_text[:80]}...",
-                    "Dokumen": file_mapping.get(os.path.basename(file_path), os.path.basename(file_path))
+                    "Dokumen": dokumen
                 })
     return results
 
@@ -185,7 +191,7 @@ if st.button("Cari"):
                     <div class=\"custom-answer\">
                     {res['Isi']}<br><br>
                     {res['Contoh']}<br><br>
-                    Maklumat ini boleh dirujuk dalam <b>{res['Dokumen']}</b>.
+                    <b>Rujukan:</b> {res['Dokumen']}
                     </div>
                     """, unsafe_allow_html=True)
             else:
@@ -193,8 +199,7 @@ if st.button("Cari"):
                     gpt_answer = ask_gpt(user_input)
                     st.markdown(f"""
                     <div class=\"custom-answer\">
-                    {gpt_answer}<br><br>
-                    Untuk maklumat lanjut, sila hubungi Pegawai kami di JANM Pulau Pinang.
+                    {gpt_answer}
                     </div>
                     """, unsafe_allow_html=True)
     else:
