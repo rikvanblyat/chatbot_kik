@@ -124,7 +124,7 @@ def search_pdf(keyword, file_path):
             results.append({
                 "Isi": f"{snippet}",
                 "Contoh": f"Sebagai contoh, {snippet[:80]}...",
-                "Dokumen": f"{dokumen}, Muka Surat {page_num}"
+                "Dokumen": f"{dokumen} (Muka Surat {page_num})"
             })
     return results
 
@@ -189,8 +189,8 @@ if st.button("Cari"):
                 for res in results:
                     st.markdown(f"""
                     <div class=\"custom-answer\">
-                    {res['Isi']}<br><br>
-                    {res['Contoh']}<br><br>
+                    <b>Jawapan:</b><br>{res['Isi']}<br><br>
+                    <b>Contoh:</b><br>{res['Contoh']}<br><br>
                     <b>Rujukan:</b> {res['Dokumen']}
                     </div>
                     """, unsafe_allow_html=True)
