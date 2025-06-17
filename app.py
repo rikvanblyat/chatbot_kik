@@ -165,6 +165,9 @@ def search_all_sources(keyword, faq_data, directory="./dokumen"):
     if faq_result:
         results.append(faq_result)
 
+    if not os.path.exists(directory):
+        return results  # folder dokumen tiada → elak error
+
     for file in os.listdir(directory):
         file_path = os.path.join(directory, file)
         if file.lower().endswith(".pdf"):
@@ -177,6 +180,7 @@ def search_all_sources(keyword, faq_data, directory="./dokumen"):
     return results
 
 # ===== Streamlit UI =====
+st.set_page_config(page_title="Chatbot PTJ", layout="centered")
 st.markdown('<div class="header">Chatbot FAQ & Carian Dokumen PTJ</div>', unsafe_allow_html=True)
 st.markdown("### Sila taip soalan atau kata kunci anda di sini:")
 user_input = st.text_input("Contoh: Baucar Panjar | Kuasa Pegawai | Definisi Perbelanjaan")
