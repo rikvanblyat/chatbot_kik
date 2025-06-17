@@ -120,11 +120,18 @@ def search_pdf(keyword, file_path):
         if text and re.search(re.escape(keyword), text, re.IGNORECASE):
             snippet = text.strip().replace("\n", " ")
             filename = os.path.basename(file_path)
-            dokumen = file_mapping.get(filename, filename)
+            dokumen_name = file_mapping.get(filename, filename)
+
+            # Cari klausa (contoh: 6.3, 4.1)
+            klausa_match = re.search(r"(\d+\.\d+)", text)
+            klausa = klausa_match.group(1) if klausa_match else "-"
+
+            rujukan = f"{dokumen_name}, Klausa {klausa}, Muka Surat {page_num}" if klausa != "-" else f"{dokumen_name}, Muka Surat {page_num}"
+
             results.append({
                 "Isi": f"{snippet}",
                 "Contoh": f"Sebagai contoh, {snippet[:80]}...",
-                "Dokumen": f"{dokumen} (Muka Surat {page_num})"
+                "Dokumen": f"Sila rujuk {rujukan}"
             })
     return results
 
@@ -139,7 +146,7 @@ def search_docx(keyword, file_path):
             results.append({
                 "Isi": f"{text}",
                 "Contoh": f"Sebagai contoh, {text[:80]}...",
-                "Dokumen": dokumen
+                "Dokumen": f"Sila rujuk {dokumen}"
             })
     return results
 
@@ -156,7 +163,7 @@ def search_xlsx(keyword, file_path):
                 results.append({
                     "Isi": f"{row_text}",
                     "Contoh": f"Sebagai contoh, {row_text[:80]}...",
-                    "Dokumen": dokumen
+                    "Dokumen": f"Sila rujuk {dokumen}"
                 })
     return results
 
@@ -191,7 +198,7 @@ if st.button("Cari"):
                     <div class=\"custom-answer\">
                     <b>Jawapan:</b><br>{res['Isi']}<br><br>
                     <b>Contoh:</b><br>{res['Contoh']}<br><br>
-                    <b>Rujukan:</b> {res['Dokumen']}
+                    <b>{res['Dokumen']}</b>
                     </div>
                     """, unsafe_allow_html=True)
             else:
