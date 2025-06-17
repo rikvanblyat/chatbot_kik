@@ -6,7 +6,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def ask_gpt(question, context=None):
     """
-    Hantar soalan ke GPT-4 Turbo dan terima jawapan dalam nada profesional kerajaan.
+    Hantar soalan ke GPT-3.5 Turbo dan terima jawapan dalam nada profesional kerajaan.
     """
     base_prompt = "Anda ialah pembantu maya profesional untuk jabatan kerajaan Malaysia. Jawab dengan nada sopan, tepat dan padat."
 
@@ -19,7 +19,7 @@ def ask_gpt(question, context=None):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4-turbo",
+            model="gpt-3.5-turbo",
             messages=messages,
             temperature=0.3,
             max_tokens=500
